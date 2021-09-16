@@ -1,3 +1,7 @@
+/*
+Q:  Simple Class Addition (Add Two Integers) Example Program in C++
+*/
+
 #include<iostream>
 #define INITIAL_NUM_1 24
 #define INITIAL_NUM_2 56
