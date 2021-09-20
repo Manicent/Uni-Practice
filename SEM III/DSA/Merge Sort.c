@@ -42,7 +42,7 @@ void Sort(int arr[], int lowLim, int highLim)
 
 void Merge(int arr[], int lowLim, int mid, int highLim)
 {
-    int i=lowLim, j= mid+1, k=0, *tempArr = malloc(sizeof *tempArr * (highLim - lowLim + 1));
+    int i=lowLim, j= mid+1, k=0, *tempArr = malloc(sizeof *tempArr * (highLim - lowLim + 1));   //Using dynamic allocation since C needs constant values
 
     while(i<=mid && j<=highLim)
     {
