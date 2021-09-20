@@ -1,5 +1,4 @@
 # Binaries for programs
 *.exe
 *.exe~
-.vscode/tasks.json
-.vscode/launch.json
+.vscode
