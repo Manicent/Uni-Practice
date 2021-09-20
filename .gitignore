@@ -3,4 +3,3 @@
 *.exe~
 .vscode/tasks.json
 .vscode/launch.json
-.gitignore
