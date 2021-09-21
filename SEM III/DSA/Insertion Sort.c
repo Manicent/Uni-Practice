@@ -1,6 +1,5 @@
 #include<stdio.h>
 
-void Swap(int*, int*);
 void Sort(int[], int);
 void PrintArray(int[], int);
 
@@ -28,21 +27,22 @@ int main()
     return 0;
 }
 
-void Swap(int *a, int *b)
-{
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
-
 void Sort(int arr[], int size)
 {
-    int i, j;
+    int i, j, n;
 
     for(i=0; i<size-1; i++)
-    for(j=0; j<size-i-1; j++)
-        if(arr[j] > arr[j+1])
-            Swap(&arr[j], &arr[j+1]);
+    {
+        n = arr[i], j = i-1;
+
+        while(j>=0 && arr[j] > n)
+        {
+            arr[j+1] = arr[j];
+            j--;
+        }
+
+        arr[j+1] = n;
+    }
 }
 
 void PrintArray(int arr[], int size)
