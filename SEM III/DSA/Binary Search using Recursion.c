@@ -3,7 +3,7 @@
 void Swap(int*, int*);
 void Sort(int[], int); //Bubble Sort
 void PrintArray(int[], int);
-int Search(int[], int, int);
+int Search(int[], int, int, int);
 
 int main()
 {
@@ -28,7 +28,7 @@ int main()
     printf("\nEnter the number to search for:\t");
     scanf("%d", &e);
 
-    int index = Search(arr, n, e);
+    int index = Search(arr, 0, n-1, e);
 
     (index == -1)   ?   printf("\n\nElement not found.")
                     :   printf("\n\nARR[%d] = %d", index, e);
@@ -61,22 +61,18 @@ void PrintArray(int arr[], int size)
     }
 }
 
-int Search(int arr[], int size, int element)
+int Search(int arr[], int lowLim, int highLim, int element)
 {
-    int u = size-1, l = 0, mid;
+    int mid = lowLim + (highLim - lowLim) / 2;
+    
+    if(arr[mid] == element)
+        return mid;
 
-    while(u >= l)
-    {
-        mid = l + (u - l) / 2;
+    if(arr[mid] > element)
+        return Search(arr, lowLim, mid, element);
 
-        if(arr[mid] == element)
-            return mid;
-        
-        if(arr[mid] > element)
-            u = mid-1;
-        else
-            l = mid+1;
-    }
+    if(arr[mid] < element)
+        return Search(arr, mid+1, highLim, element);
 
     return -1;
 }
