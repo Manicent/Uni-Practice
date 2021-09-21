@@ -1,6 +1,10 @@
 # Binaries for programs
 *.exe
 *.exe~
+
+# Data files
 *.dat
 *.txt
+
+# VS Code files
 .vscode
