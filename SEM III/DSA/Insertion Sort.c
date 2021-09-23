@@ -29,9 +29,7 @@ int main()
 
 void Sort(int arr[], int size)
 {
-    int i, j, n;
-
-    for(i=0; i<size-1; i++)
+    for(int i=0, j, n; i<size-1; i++)
     {
         n = arr[i], j = i-1;
 
