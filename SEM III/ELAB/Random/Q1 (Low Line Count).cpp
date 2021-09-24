@@ -1,7 +1,7 @@
 #include<iostream>
 #include<math.h>
 using namespace std;
-float RoundToDigit(float num, int dCount) { return std::round(num*pow(10, dCount))/pow(10, dCount);}
+float RoundToDigit(float num, int dCount) { return round(num*pow(10, dCount))/pow(10, dCount);}
 main()
 {
     char carName[30];
