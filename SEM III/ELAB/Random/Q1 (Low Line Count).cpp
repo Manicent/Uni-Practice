@@ -1,18 +1,18 @@
 #include<iostream>
 #include<math.h>
 using namespace std;
-float RoundToDigit(float num, int dCount) { return round(num*pow(10, dCount))/pow(10, dCount);}
+float RoundToDigit(float n, int c) { return round(n*pow(10, c))/pow(10, c);}
 main()
 {
-    char carName[30];
-    int rampLength;
-    float carAcc, rWidth, finalV, distCovered;
-    cin>>carName>>rampLength>>carAcc>>rWidth;
-    finalV = sqrt(2*carAcc*rampLength), distCovered = finalV*finalV/9.805;
-    if(distCovered < rWidth - 5.0)
-        cout<<carName<<" will reach a speed of "<<RoundToDigit(finalV, 2)<<" m/s on a "<<rampLength<<" ramp crossing "<<RoundToDigit(distCovered, 1)<<" of "<<RoundToDigit(rWidth, 1)<<" meters, SPLASH!";
-    else if(distCovered > rWidth)
-        cout<<carName<<" will reach a speed of "<<RoundToDigit(finalV, 2)<<" m/s on a "<<rampLength<<" ramp crossing "<<RoundToDigit(distCovered, 1)<<" of "<<RoundToDigit(rWidth, 1)<<" meters, LIKE A LEGEND!";
+    char n[30];
+    int r;
+    float a, w, v, c;
+    cin>>n>>r>>a>>w;
+    v = sqrt(2*a*r), c = v*v/9.805;
+    if(c < w - 5.0)
+        cout<<n<<" will reach a speed of "<<RoundToDigit(v, 2)<<" m/s on a "<<r<<" ramp crossing "<<RoundToDigit(c, 1)<<" of "<<RoundToDigit(w, 1)<<" meters, SPLASH!";
+    else if(c > w)
+        cout<<n<<" will reach a speed of "<<RoundToDigit(v, 2)<<" m/s on a "<<r<<" ramp crossing "<<RoundToDigit(c, 1)<<" of "<<RoundToDigit(w, 1)<<" meters, LIKE A LEGEND!";
     else
-        cout<<carName<<" will reach a speed of "<<RoundToDigit(finalV, 2)<<" m/s on a "<<rampLength<<" ramp crossing "<<RoundToDigit(distCovered, 1)<<" of "<<RoundToDigit(rWidth, 1)<<" meters, JOVA MADE IT!";
+        cout<<n<<" will reach a speed of "<<RoundToDigit(v, 2)<<" m/s on a "<<r<<" ramp crossing "<<RoundToDigit(c, 1)<<" of "<<RoundToDigit(w, 1)<<" meters, JOVA MADE IT!";
 }
