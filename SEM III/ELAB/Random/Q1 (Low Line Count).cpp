@@ -16,5 +16,3 @@ main()
     else
         cout<<carName<<" will reach a speed of "<<RoundToDigit(finalV, 2)<<" m/s on a "<<rampLength<<" ramp crossing "<<RoundToDigit(distCovered, 1)<<" of "<<RoundToDigit(rWidth, 1)<<" meters, JOVA MADE IT!";
 }
-
-
