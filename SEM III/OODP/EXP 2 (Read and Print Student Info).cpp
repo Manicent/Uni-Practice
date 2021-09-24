@@ -21,6 +21,19 @@ class StudentInfo
     void PrintInfo();
 };
 
+int main()
+{
+    StudentInfo stuobj;
+
+    stuobj.ReadInfo();
+
+    cout<<endl;
+
+    stuobj.PrintInfo();
+
+    return 0;
+}
+
 void StudentInfo::ReadInfo()
 {
     cout<<"Enter the student info below!"<<endl;
@@ -42,17 +55,4 @@ void StudentInfo::PrintInfo()
     cout<<"Class:\t\t"<<grade<<endl;
     cout<<"Section:\t"<<section<<endl;
     cout<<"Roll Number:\t"<<rollno<<endl;
-}
-
-int main()
-{
-    StudentInfo stuobj;
-
-    stuobj.ReadInfo();
-
-    cout<<endl;
-
-    stuobj.PrintInfo();
-
-    return 0;
 }

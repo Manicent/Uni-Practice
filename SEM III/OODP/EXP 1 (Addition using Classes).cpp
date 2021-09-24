@@ -23,22 +23,6 @@ class AddData
     void Display();
 };
 
-void AddData::Input()
-{
-    cout<<"Enter the two integers:\t";
-    cin>>a>>b;
-}
-
-void AddData::Add()
-{
-    result = a+b;
-}
-
-void AddData::Display()
-{
-    cout<<"The sum of "<<a<<" and "<<b<<" is "<<result<<"."<<endl;
-}
-
 int main()
 {
     //Using Constructor
@@ -55,4 +39,20 @@ int main()
     obj.Display();
 
     return 0;
+}
+
+void AddData::Input()
+{
+    cout<<"Enter the two integers:\t";
+    cin>>a>>b;
+}
+
+void AddData::Add()
+{
+    result = a+b;
+}
+
+void AddData::Display()
+{
+    cout<<"The sum of "<<a<<" and "<<b<<" is "<<result<<"."<<endl;
 }

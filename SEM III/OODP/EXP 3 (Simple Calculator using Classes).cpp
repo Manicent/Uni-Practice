@@ -25,6 +25,24 @@ class CalcData
     void Display();
 };
 
+int main()
+{
+    //Using Constructor
+    cout<<"Using Constructor"<<endl;
+    CalcData obj = CalcData(INITIAL_NUM_1, INITIAL_NUM_2);
+
+    obj.Calculate(CalcData::ShowMenu());
+    obj.Display();
+
+    //Using Input Function
+    cout<<endl<<"Using Input Function"<<endl;
+    obj.Input();
+    obj.Calculate(CalcData::ShowMenu());
+    obj.Display();
+
+    return 0;
+}
+
 void CalcData::Input()
 {
     cout<<"Enter the two integers:\t";
@@ -77,22 +95,4 @@ void CalcData::Calculate(int op)
 void CalcData::Display()
 {
     cout<<"The result of the operation was "<<result<<"."<<endl;
-}
-
-int main()
-{
-    //Using Constructor
-    cout<<"Using Constructor"<<endl;
-    CalcData obj = CalcData(INITIAL_NUM_1, INITIAL_NUM_2);
-
-    obj.Calculate(CalcData::ShowMenu());
-    obj.Display();
-
-    //Using Input Function
-    cout<<endl<<"Using Input Function"<<endl;
-    obj.Input();
-    obj.Calculate(CalcData::ShowMenu());
-    obj.Display();
-
-    return 0;
 }
