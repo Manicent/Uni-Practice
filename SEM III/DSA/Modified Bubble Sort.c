@@ -39,7 +39,7 @@ void Sort(int arr[], int size)
 {
     int i, j,swap_flag;
 
-    for(i=0; i<size-1; i++)
+    for(i=0; i<size; i++)
     {
         swap_flag=0;
         for(j=0; j<size-i-1; j++)
