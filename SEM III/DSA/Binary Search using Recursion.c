@@ -72,8 +72,7 @@ int Search(int arr[], int lowLim, int highLim, int element)
         return mid;
 
     if(arr[mid] > element)
-        return Search(arr, lowLim, mid, element);
+        return Search(arr, lowLim, mid-1, element);
 
-    if(arr[mid] < element)
-        return Search(arr, mid+1, highLim, element);
+    return Search(arr, mid+1, highLim, element);
 }
