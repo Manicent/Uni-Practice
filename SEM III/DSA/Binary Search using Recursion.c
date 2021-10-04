@@ -63,6 +63,9 @@ void PrintArray(int arr[], int size)
 
 int Search(int arr[], int lowLim, int highLim, int element)
 {
+    if(lowLim > highLim)
+        return -1;
+
     int mid = lowLim + (highLim - lowLim) / 2;
     
     if(arr[mid] == element)
@@ -73,6 +76,4 @@ int Search(int arr[], int lowLim, int highLim, int element)
 
     if(arr[mid] < element)
         return Search(arr, mid+1, highLim, element);
-
-    return -1;
 }
