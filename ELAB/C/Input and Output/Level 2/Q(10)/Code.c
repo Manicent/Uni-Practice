@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main()
+{
+    float amount,rate,time,si;
+    scanf("%f%f%f", &amount, &rate, &time);
+    si=amount*rate*time/100.0;
+    printf("%.4f", si);
+	return 0;
+}
