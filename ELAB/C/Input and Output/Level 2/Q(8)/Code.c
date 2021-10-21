@@ -5,5 +5,5 @@ int main()
     scanf("%f", &tractLand);
     tractLandAcred = tractLand/43560.0;
     printf("%.2f sq.ft is equal to %.2f acres", tractLand, tractLandAcred);
-	return 0;
+    return 0;
 }

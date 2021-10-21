@@ -6,5 +6,5 @@ int main()
     scanf("%d%d%f%d", &billid, &prodid, &price, &quantity);
     totprice=price*quantity;
     printf("%.2f", totprice);
-	return 0;
+    return 0;
 }

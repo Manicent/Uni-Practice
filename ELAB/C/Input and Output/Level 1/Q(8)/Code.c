@@ -15,5 +15,5 @@ int main()
     printf("Multiplication : %d\n", mult);
     printf("Division : %.3f\n", div);
     printf("Modulus : %d\n", mod);
-	return 0;
+    return 0;
 }

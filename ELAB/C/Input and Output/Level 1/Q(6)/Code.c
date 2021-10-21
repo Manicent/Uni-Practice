@@ -4,5 +4,5 @@ int main()
     char Asc;
     scanf("%c", &Asc);
     printf("%d", Asc);
-	return 0;
+    return 0;
 }

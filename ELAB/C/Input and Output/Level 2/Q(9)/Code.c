@@ -6,5 +6,5 @@ int main()
     scanf("%d",&N);
     fp = N, sp = pow(N,2), tp = pow(N,3);
     printf("%d %d %d", fp, sp, tp);
-	return 0;
+    return 0;
 }

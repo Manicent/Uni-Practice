@@ -5,5 +5,5 @@ int main()
     scanf("%d%d%d", &length, &width, &height);
     surfacearea = 2*(length*width + width*height + height*length);
     printf("%d", surfacearea);
-	return 0;
+    return 0;
 }

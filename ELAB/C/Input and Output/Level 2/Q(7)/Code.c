@@ -7,5 +7,5 @@ int main()
     area=rad*rad*PI;
     ci=2*rad*PI;
     printf("%.2f\n%.2f", area, ci);
-	return 0;
+    return 0;
 }

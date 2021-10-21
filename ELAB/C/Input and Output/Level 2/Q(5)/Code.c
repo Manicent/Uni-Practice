@@ -7,5 +7,5 @@ int main()
     m=(sec/60)%60;
     h=(sec/3600);
     printf("%dH:%dM:%dS",h,m,s);
-	return 0;
+    return 0;
 }

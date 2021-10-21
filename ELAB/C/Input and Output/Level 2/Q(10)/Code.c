@@ -5,5 +5,5 @@ int main()
     scanf("%f%f%f", &amount, &rate, &time);
     si=amount*rate*time/100.0;
     printf("%.4f", si);
-	return 0;
+    return 0;
 }

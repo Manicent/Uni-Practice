@@ -9,5 +9,5 @@ int main()
     s=(float)(a+b+c)/2.0;
     area=sqrt(s*(s-a)*(s-b)*(s-c));
     printf("%.2f",area);
-	return 0;
+    return 0;
 }

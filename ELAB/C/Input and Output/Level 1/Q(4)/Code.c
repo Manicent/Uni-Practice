@@ -5,5 +5,5 @@ int main()
     scanf("%d%d", &n, &m);
     res = n*n + m*m - (n-m)*(n-m) - (n+m);
     printf("%d", res);
-	return 0;
+    return 0;
 }
