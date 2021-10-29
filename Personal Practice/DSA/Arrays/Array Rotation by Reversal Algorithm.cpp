@@ -11,7 +11,7 @@ void rotate(vector<int> &arr, int d)
 }
 int main()
 {
-    int n,d,temp;
+    int n,d;
     cout<<"Enter the size of array and rotation count:\t";
     cin>>n>>d;
     vector<int> array;
