@@ -7,8 +7,9 @@ int gcd(int a, int b)
         return b;
     return gcd(b % a, a);
 }
-void rotate(vector<int> &arr, int n, int d)
+void rotate(vector<int> &arr, int d)
 {
+    int n=arr.size();
     d%=n;
     int g = gcd(n, d);
     for(int i=0; i<g; i++)
@@ -25,10 +26,12 @@ int main()
     cout<<"Enter the size of array and rotation count:\t";
     cin>>n>>d;
     vector<int> array;
-    array.resize(n);
+    //Custom Input
+    //array.resize(n);
     for(int i=0; i<n; i++)
-        cin>>array[i];
-    rotate(array, n, d);
+        //cin>>array[i];
+        array.push_back(i+1);     //Comment out if using custom input version
+    rotate(array, d);
     cout<<endl;
     for(auto i=array.begin(); i!=array.end(); i++)
         cout<<*i<<" | ";
