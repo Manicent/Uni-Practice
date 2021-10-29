@@ -25,15 +25,15 @@ int main()
     int n,d;
     cout<<"Enter the size of array and rotation count:\t";
     cin>>n>>d;
-    vector<int> array;
+    vector<int> arr;
     //Custom Input
-    //array.resize(n);
+    //arr.resize(n);
     for(int i=0; i<n; i++)
-        //cin>>array[i];
-        array.push_back(i+1);     //Comment out if using custom input version
-    rotate(array, d);
+        //cin>>arr[i];
+        arr.push_back(i+1);     //Comment out if using custom input version
+    rotate(arr, d);
     cout<<endl;
-    for(auto i=array.begin(); i!=array.end(); i++)
+    for(auto i=arr.begin(); i!=arr.end(); i++)
         cout<<*i<<" | ";
     return 0;
 }
